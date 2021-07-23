@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
+
+html, body {
+  height: 100%;
+  background-color: #e1e1e1; }
+
+body {
+  overflow-x: hidden; }
+
+.box-login {
+  max-width: 600px;
+  width: 95%;
+  padding: 60px 0;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 5px #777; }
+  .box-login h2 {
+    text-align: center;
+    font-size: 19px;
+    color: black;
+    margin: 10px 0;
+    font-weight: normal;
+    text-transform: uppercase; }
+  .box-login form {
+    width: 85%;
+    margin: 0 auto; }
+  .box-login input[type=text], .box-login input[type=password] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding-left: 8px; }
+  .box-login input[type=submit] {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #00bfa5;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px; }
+
+.erro-box {
+  width: 95%;
+  margin: 0 auto;
+  padding: 8px 2%;
+  text-align: center;
+  background-color: #ff4267;
+  color: white;
+  font-size: 15px; }
+
+.clear {
+  clear: both; }
+
+.center {
+  padding: 0 2%;
+  margin: 0 auto; }
+
+.w100 {
+  width: 100%; }
+
+.w50 {
+  width: 49%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+header.painel-controle {
+  padding: 10px 0;
+  background-color: #78909c;
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px; }
+  header.painel-controle .loggout {
+    float: right; }
+    header.painel-controle .loggout a {
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-left: 30px;
+      padding: 10px; }
+  header.painel-controle .menu-btn {
+    float: left;
+    cursor: pointer;
+    color: white; }
+
+div.menu {
+  float: left;
+  width: 300px;
+  height: 100%;
+  background-color: #455a64;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 10px; }
+  div.menu .menu-wraper {
+    width: 300px; }
+  div.menu .box-usuario {
+    text-align: center; }
+    div.menu .box-usuario .avatar-usuario {
+      text-align: left;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #2f3d42;
+      display: inline-block; }
+      div.menu .box-usuario .avatar-usuario i {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: #2f3d42; }
+    div.menu .box-usuario .image-usuario {
+      display: inline-block;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%; }
+      div.menu .box-usuario .image-usuario img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 3px solid #2f3d42; }
+    div.menu .box-usuario .nome-usuario {
+      text-align: center;
+      margin-top: 10px; }
+      div.menu .box-usuario .nome-usuario p {
+        color: white;
+        font-size: 15px;
+        font-weight: normal; }
+  div.menu .itens-menu {
+    margin-top: 30px; }
+    div.menu .itens-menu h2 {
+      text-align: left;
+      background-color: #2f3d42;
+      color: white;
+      padding: 5px;
+      font-size: 17px;
+      font-weight: normal; }
+    div.menu .itens-menu a {
+      font-weight: normal;
+      border-bottom: 2px solid #2f3d42;
+      color: white;
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 13px; }
+
+.content {
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px;
+  padding: 10px; }
+  .content .box-content {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 25px; }
+    .content .box-content h1 {
+      font-weight: normal;
+      padding-bottom: 12px;
+      font-size: 25px; }
+  .content table {
+    min-width: 900px;
+    width: 100%;
+    margin: 20px 0; }
+    .content table tr {
+      color: #555; }
+    .content table tr:nth-of-type(1) {
+      background-color: #338A81;
+      border-collapse: collapse;
+      color: white; }
+    .content table td {
+      padding: 7px;
+      border-bottom: 1px solid #ccc; }
+    .content table a.btn {
+      text-decoration: none;
+      padding: 4px 6px;
+      color: white;
+      display: inline-block;
+      font-size: 13px; }
+    .content table a.btn-edit {
+      background-color: #FC944E; }
+    .content table a.btn-delete {
+      background-color: #c91e2a; }
+    .content table a.btn-arrow {
+      color: #444;
+      border: 1px solid #ccc;
+      padding: 4px 6px;
+      transition: 0.5s; }
+    .content table a.btn-arrow:hover {
+      color: red;
+      background-color: gainsboro;
+      transition: 0.3s; }
+  .content .wraper-table {
+    overflow-x: auto; }
+  .content .box-metricas {
+    width: 100%;
+    height: 100%;
+    padding: 10px; }
+    .content .box-metricas .box-metricas-single {
+      width: 33.3%;
+      float: left;
+      padding: 30px;
+      border: 5px solid white; }
+    .content .box-metricas h2 {
+      font-weight: normal;
+      margin-bottom: 10px;
+      color: white; }
+    .content .box-metricas p {
+      color: white; }
+  .content .table-responsive {
+    max-width: 1000px;
+    margin: 0 auto; }
+    .content .table-responsive .col {
+      float: left;
+      width: 50%; }
+    .content .table-responsive .row:nth-of-type(1) {
+      font-weight: bold;
+      border-bottom: 1px solid #555; }
+    .content .table-responsive .row {
+      color: #555;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 0;
+      padding-left: 10px; }
+  .content .paginacao {
+    text-align: center;
+    margin: 20px 0; }
+    .content .paginacao a {
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 8px;
+      display: inline-block;
+      padding: 3px 4px;
+      border: 1px solid #ccc;
+      color: #666; }
+    .content .paginacao a.pag-selected {
+      background-color: gainsboro; }
+
+.box-content form {
+  margin: 30px 0; }
+  .box-content form .form-group {
+    margin: 15px 0; }
+  .box-content form label {
+    font-size: 17px;
+    font-weight: normal;
+    color: black;
+    display: block; }
+  .box-content form input[type=text], .box-content form input[type=password] {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc; }
+  .box-content form textarea {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    resize: vertical; }
+  .box-content form input[type=file] {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px; }
+  .box-content form input[type=submit] {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #00bfa5;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px; }
+  .box-content form select {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer; }
+
+/*Box de alerta! */
+.box-alert {
+  width: 100%;
+  padding: 10px 0; }
+
+.sucesso {
+  background-color: #0cb011;
+  color: white;
+  text-align: center; }
+
+.erro {
+  text-align: center;
+  background-color: #f75353;
+  color: white; }
+
+.menu-active {
+  background-color: #384a52; }
+
+.menu-active::before {
+  content: "> "; }
+
+.form-group-login label {
+  font-size: 14px;
+  padding-right: 6px;
+  font-weight: normal;
+  color: black; }
+
+form .form-group-login:nth-of-type(2) {
+  position: relative;
+  top: 10px; }
+
+@media screen and (max-width: 1100px) {
+  .content h2 {
+    font-size: 16px !important; } }
+@media screen and (max-width: 950px) {
+  .content .box-metricas-single {
+    width: 100% !important; } }
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none; }
+
+  .box-content {
+    width: 100%;
+    left: 0; }
+
+  header.painel-controle {
+    width: 100%;
+    left: 0; }
+
+  .content {
+    width: 100%;
+    left: 0; } }
+@media screen and (max-width: 500px) {
+  .w50 {
+    width: 100% !important; } }
+
+/*# sourceMappingURL=style.css.map */
